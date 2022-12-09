@@ -1,6 +1,0 @@
-dash==2.6.0
-pandas
-opcua
-pymysql
-gunicorn
-dash_bootstrap_components
