@@ -3,10 +3,18 @@ import dash_bootstrap_components as dbc
 from opcua import Client
 
 # Connect to main app.py file
-from app import app
-from app import server
+# from app import app
+# from app import server
 
 from apps import navigationadv, graph, dashboard_layout
+
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.YETI],
+                meta_tags=[{'name': 'viewport',
+                            'content': 'width=device-width, initial-scale=1.0'}]
+                )
+                
+server = app.server
+
 
 url = "opc.tcp://192.168.0.30:4840"
 client = Client(url)
