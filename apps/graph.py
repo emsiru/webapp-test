@@ -4,7 +4,7 @@ import pymysql
 import time
 import pandas as pd
 import plotly.graph_objects as go
-from app import app
+from index import app
 
 # app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
