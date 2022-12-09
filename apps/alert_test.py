@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 import dash_daq as daq
 from opcua import Client
 # from button import button_card
-from app import app
+from index import app
 
 url = "opc.tcp://192.168.0.30:4840"
 client = Client(url)
